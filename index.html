@@ -30,9 +30,7 @@
       <div class="container vacancies__container">
         <section class="vacancies__filter filter">
           <h2 class="filter__title">Фильтр</h2>
-          
           <form class="filter__form">
-            
             <fieldset class="filter__fieldset">
               <legend class="filter__legend">Город</legend>
               <select name="city" id="city" class="filter__select">
@@ -42,7 +40,6 @@
                 <option>Иркутск</option>
               </select>
             </fieldset>
-            
             <fieldset class="filter__fieldset">
               <legend class="filter__legend">Заработная плата</legend>
               <div class="filter__range">
@@ -50,7 +47,6 @@
                 <input class="filter__input" type="number" name="pay-to" id="to" placeholder="до">
               </div>
             </fieldset>
-            
             <div class="filter__checkboxes">
               <fieldset class="filter__fieldset">
                 <legend class="filter__legend">Формат</legend>
@@ -67,7 +63,6 @@
                   Гибкий
                 </label>
               </fieldset>
-              
               <fieldset class="filter__fieldset">
                 <legend class="filter__legend">Опыт работы</legend>
                 <label class="filter__label checkbox">
@@ -87,36 +82,35 @@
                   <span>От 3-х лет</span>
                 </label>
               </fieldset>
-              
               <fieldset class="filter__fieldset">
                 <legend class="filter__legend">Занятость</legend>
                 <label class="filter__label">
-                  <input class="filter__checkbox checkbox" type="checkbox" name="occupancy" value="полная">
+                  <input class="filter__checkbox checkbox" type="checkbox" name="type" value="полная">
                   <span>Полная</span>
                 </label>
                 <label class="filter__label">
-                  <input class="filter__checkbox checkbox" type="checkbox" name="occupancy" value="частичная">
+                  <input class="filter__checkbox checkbox" type="checkbox" name="type" value="частичная">
                   <span>Частичная</span>
                 </label>
                 <label class="filter__label">
-                  <input class="filter__checkbox checkbox" type="checkbox" name="occupancy" value="стажировка">
+                  <input class="filter__checkbox checkbox" type="checkbox" name="type" value="стажировка">
                   <span>Стажировка</span>
                 </label>
                 <label class="filter__label">
-                  <input class="filter__checkbox checkbox" type="checkbox" name="occupancy" value="проектная">
+                  <input class="filter__checkbox checkbox" type="checkbox" name="type" value="проектная">
                   <span>Проектная работа</span>
                 </label>
               </fieldset>
-            </div>            
-            
-            <button type="reset" class="filter__btn btn btn_reset">Очистить</button>
-            
-            <button type="submit" class="filter__btn btn btn_submit">Применить</button>
+            </div>
+            <div class="filter__buttons">
+              <button type="reset" class="filter__button btn btn_reset">Очистить</button>
+              <button type="submit" class="filter__button btn btn_submit">Применить</button>
+            </div>        
           </form>
         </section>
         
         <section class="vacancies__cards cards">
-          
+          <h2 class="cards__title visually-hidden">Список вакансий</h2>
         </section>
       </div>
     </div>
