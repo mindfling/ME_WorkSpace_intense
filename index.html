@@ -25,6 +25,101 @@
         </h1>
       </div>
     </section>
+    
+    <div class="vacancies" id="vacancies">
+      <div class="container vacancies__container">
+        <section class="vacancies__filter filter">
+          <h2 class="filter__title">Фильтр</h2>
+          
+          <form class="filter__form">
+            
+            <fieldset class="filter__fieldset">
+              <legend class="filter__legend">Город</legend>
+              <select name="city" id="city" class="filter__select">
+                <option value="">- Выбрать город -</option>
+                <option>Тамбов</option>
+                <option>Самара</option>
+                <option>Иркутск</option>
+              </select>
+            </fieldset>
+            
+            <fieldset class="filter__fieldset">
+              <legend class="filter__legend">Заработная плата</legend>
+              <div class="filter__range">
+                <input class="filter__input" type="number" name="pay-from" id="from" placeholder="от">
+                <input class="filter__input" type="number" name="pay-to" id="to" placeholder="до">
+              </div>
+            </fieldset>
+            
+            <div class="filter__checkboxes">
+              <fieldset class="filter__fieldset">
+                <legend class="filter__legend">Формат</legend>
+                <label class="filter__label checkbox">
+                  <input class="checkbox__input" type="checkbox" name="office" id="office">
+                  <span>Офис</span>
+                </label>
+                <label class="filter__label checkbox">
+                  <input class="checkbox__input" type="checkbox" name="remote" id="remote">
+                  <span>Удаленный</span>
+                </label>
+                <label class="filter__label checkbox">
+                  <input class="checkbox__input" type="checkbox" name="flex" id="flex">
+                  <span>Гибкий</span>
+                </label>
+              </fieldset>
+              
+              <fieldset class="filter__fieldset">
+                <legend class="filter__legend">Опыт работы</legend>
+                <label class="filter__label">
+                  <input class="filter__checkbox" type="checkbox" name="office" id="office">
+                  <span>Не&nbsp;важно</span>
+                </label>
+                <label class="filter__label">
+                  <input class="filter__checkbox" type="checkbox" name="office" id="office">
+                  <span>Без опыта</span>
+                </label>
+                <label class="filter__label">
+                  <input class="filter__checkbox" type="checkbox" name="office" id="office">
+                  <span>От 1 года до 3-х лет</span>
+                </label>
+                <label class="filter__label">
+                  <input class="filter__checkbox" type="checkbox" name="office" id="office">
+                  <span>От 3-х лет</span>
+                </label>
+              </fieldset>
+              
+              <fieldset class="filter__fieldset">
+                <legend class="filter__legend">Занятость</legend>
+                <label class="filter__label">
+                  <input class="filter__checkbox" type="checkbox" name="office" id="office">
+                  <span>Не&nbsp;важно</span>
+                </label>
+                <label class="filter__label">
+                  <input class="filter__checkbox" type="checkbox" name="office" id="office">
+                  <span>Без опыта</span>
+                </label>
+                <label class="filter__label">
+                  <input class="filter__checkbox" type="checkbox" name="office" id="office">
+                  <span>От 1 года до 3-х лет</span>
+                </label>
+                <label class="filter__label">
+                  <input class="filter__checkbox" type="checkbox" name="office" id="office">
+                  <span>От 3-х лет</span>
+                </label>
+              </fieldset>
+            </div>            
+            
+            <button class="filter__btn"></button>
+            
+            <button type="submit"></button>
+          </form>
+        </section>
+        
+        <section class="vacancies__cards cards">
+          
+        </section>
+      </div>
+    </div>
   </main>
   
   <footer class="footer">
