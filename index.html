@@ -55,35 +55,35 @@
               <fieldset class="filter__fieldset">
                 <legend class="filter__legend">Формат</legend>
                 <label class="filter__label checkbox">
-                  <input class="checkbox__input" type="checkbox" name="office" id="office">
-                  <span>Офис</span>
+                  <input class="checkbox__input" type="checkbox" name="format" value="офис">
+                  Офис
                 </label>
                 <label class="filter__label checkbox">
-                  <input class="checkbox__input" type="checkbox" name="remote" id="remote">
-                  <span>Удаленный</span>
+                  <input class="checkbox__input" type="checkbox" name="format" value="удаленный">
+                  Удаленный
                 </label>
                 <label class="filter__label checkbox">
-                  <input class="checkbox__input" type="checkbox" name="flex" id="flex">
-                  <span>Гибкий</span>
+                  <input class="checkbox__input" type="checkbox" name="format" value="гибкий">
+                  Гибкий
                 </label>
               </fieldset>
               
               <fieldset class="filter__fieldset">
                 <legend class="filter__legend">Опыт работы</legend>
-                <label class="filter__label">
-                  <input class="filter__checkbox" type="checkbox" name="office" id="office">
-                  <span>Не&nbsp;важно</span>
+                <label class="filter__label checkbox">
+                  <input class="checkbox__input" type="checkbox" name="experience" value="не важно">
+                  <span>Не важно</span>
                 </label>
-                <label class="filter__label">
-                  <input class="filter__checkbox" type="checkbox" name="office" id="office">
+                <label class="filter__label checkbox">
+                  <input class="checkbox__input" type="checkbox" name="experience" value="без опыта">
                   <span>Без опыта</span>
                 </label>
-                <label class="filter__label">
-                  <input class="filter__checkbox" type="checkbox" name="office" id="office">
+                <label class="filter__label checkbox">
+                  <input class="checkbox__input" type="checkbox" name="experience" value="от 1 до 3">
                   <span>От 1 года до 3-х лет</span>
                 </label>
-                <label class="filter__label">
-                  <input class="filter__checkbox" type="checkbox" name="office" id="office">
+                <label class="filter__label checkbox">
+                  <input class="checkbox__input" type="checkbox" name="experience" value="больше 3">
                   <span>От 3-х лет</span>
                 </label>
               </fieldset>
@@ -91,27 +91,27 @@
               <fieldset class="filter__fieldset">
                 <legend class="filter__legend">Занятость</legend>
                 <label class="filter__label">
-                  <input class="filter__checkbox" type="checkbox" name="office" id="office">
-                  <span>Не&nbsp;важно</span>
+                  <input class="filter__checkbox checkbox" type="checkbox" name="occupancy" value="полная">
+                  <span>Полная</span>
                 </label>
                 <label class="filter__label">
-                  <input class="filter__checkbox" type="checkbox" name="office" id="office">
-                  <span>Без опыта</span>
+                  <input class="filter__checkbox checkbox" type="checkbox" name="occupancy" value="частичная">
+                  <span>Частичная</span>
                 </label>
                 <label class="filter__label">
-                  <input class="filter__checkbox" type="checkbox" name="office" id="office">
-                  <span>От 1 года до 3-х лет</span>
+                  <input class="filter__checkbox checkbox" type="checkbox" name="occupancy" value="стажировка">
+                  <span>Стажировка</span>
                 </label>
                 <label class="filter__label">
-                  <input class="filter__checkbox" type="checkbox" name="office" id="office">
-                  <span>От 3-х лет</span>
+                  <input class="filter__checkbox checkbox" type="checkbox" name="occupancy" value="проектная">
+                  <span>Проектная работа</span>
                 </label>
               </fieldset>
             </div>            
             
-            <button class="filter__btn"></button>
+            <button type="reset" class="filter__btn btn btn_reset">Очистить</button>
             
-            <button type="submit"></button>
+            <button type="submit" class="filter__btn btn btn_submit">Применить</button>
           </form>
         </section>
         
