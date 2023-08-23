@@ -4,7 +4,7 @@
   box-sizing: inherit;
 }
 
-/* ???? ПОЧЕМУ html У МАКСИМА В НАЧАЛЕ ???? */
+/* ? ПОЧЕМУ html У МАКСИМА В НАЧАЛЕ ? */
 html {
   position: relative;
   overflow-x: hidden;
@@ -27,6 +27,13 @@ body {
   color: #171717;
   background-color: #F3F4F8;
   line-height: 1.2; /* * 1.2 */
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
 }
 
 img, svg {
@@ -79,3 +86,8 @@ fieldset {
   padding: 0 30px;
 }
 
+/* Красиво оформляем выделение */
+::selection {
+  background-color: #CCCCCC;
+  color: #ffffff;
+}

@@ -12,15 +12,20 @@
   align-items: center;
 }
 
-.header__logo {
-}
 .header__logo-link {
 }
 .header__logo-img {
+  width: 137px;
+  height: 24px;
 }
 
 
 .header__btn {
+  opacity: 1;
+  transition: opacity 500ms ease;
+}
+.header__btn:hover {
+  opacity: .7;
 }
 .btn {
   display: flex;
