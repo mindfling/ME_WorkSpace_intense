@@ -1,0 +1,41 @@
+.hero {
+  display: flex;
+  width: 100%;
+}
+
+
+.hero__container {
+  padding-top: 57px;
+  padding-bottom: 57px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  
+  background: url(../img/hero/macbg@1x.png) 100% 0  no-repeat;
+  background-size: contain;
+}
+
+.hero__title {
+  max-width: 780px;
+  
+  color: #171717;
+  font-family: Inter;
+  font-size: 90px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 108px */
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+}
+.hero__title_blue {
+  color: #2A18FF;
+  /* font-family: Inter; */
+  /* font-size: 90px; */
+  /* font-style: normal; */
+  /* font-weight: 400; */
+  /* line-height: 120%; */
+  /* letter-spacing: 1.8px; */
+  /* text-transform: uppercase; */
+}
