@@ -1,0 +1,117 @@
+.vacancies {
+  display: flex;
+  width: 100%;
+}
+.container {
+}
+.vacancies__container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+}
+
+
+.vacancies__filter {
+  width: 280px;
+}
+
+.filter {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 32px;
+}
+.filter__title {
+}
+.filter__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 32px;
+}
+.filter__fieldset {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 11px;
+}
+.filter__legend {
+}
+.filter__select {
+}
+.filter__range {
+}
+.filter__input {
+}
+.filter__checkboxes {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 32px;
+}
+.filter__label {
+}
+.checkbox {
+}
+.checkbox__input {
+}
+.filter__checkbox {
+}
+.filter__buttons {
+}
+.filter__button {
+}
+.btn {
+}
+.btn_reset {
+}
+.btn_submit {
+}
+
+
+
+.vacancies__cards {
+  width: 880px;
+}
+
+.cards {
+}
+.cards__title {
+}
+.visually-hidden {
+}
+.cards__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.cards__item {
+  width: 280px;
+  height: 219px;
+  padding: 16px;
+  border-radius: 16px;
+  background: #FFF;
+}
+
+
+.vacancy {
+}
+.vacancy__img {
+}
+.vacancy__company {
+}
+.vacancy__title {
+}
+.vacancy__fields {
+}
+.vacancy__field {
+}
