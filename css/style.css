@@ -1,10 +1,12 @@
+/** my styles */
+/* .main {
+  border: 1px solid magenta;
+} */
+.container {
+  border: 1px solid orange;
+}
 
-
-/* 
 .vacancy {
   border: 1px solid lawngreen;
   background-color: #fff;
-} */
-
-
-
+}
