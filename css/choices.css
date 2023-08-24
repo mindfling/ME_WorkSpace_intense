@@ -18,6 +18,10 @@
   padding: 0;
 }
 
+.choices__list--dropdown {
+  z-index: 99 !important; /* список сверху!! */
+}
+
 .choices[data-type*=select-one]::after {
   width: 20px;
   height: 20px;
