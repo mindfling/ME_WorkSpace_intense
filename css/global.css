@@ -4,11 +4,11 @@
   box-sizing: inherit;
 }
 
-/* ? ПОЧЕМУ html У МАКСИМА В НАЧАЛЕ ? */
+/* В КАКОМ ПОРЯДКЕ ПРАВИЛЬНО ? */
 html {
   position: relative;
-  overflow-x: hidden;
-  scroll-behavior: smooth;
+  overflow-x: hidden; /* скрыть выпадающий контент */
+  scroll-behavior: smooth; /* плавная прокрутка */
   box-sizing: border-box;
 }
 
@@ -26,7 +26,7 @@ body {
   font-weight: 400;
   color: #171717;
   background-color: #F3F4F8;
-  line-height: 1.2; /* * 1.2 */
+  line-height: 1.2;
 }
 
 .main {
@@ -88,6 +88,6 @@ fieldset {
 
 /* Красиво оформляем выделение */
 ::selection {
-  background-color: #CCCCCC;
+  background-color: #cccccc;
   color: #ffffff;
 }
