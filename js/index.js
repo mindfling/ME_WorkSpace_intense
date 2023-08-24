@@ -2,12 +2,7 @@ const API_URL = "https://workspace-methed.vercel.app/";
 const LOCATION_URL = "api/locations";
 
 
-// поключаем скрипт для работы с селектом
-const citySelect = document.querySelector('#city');
-const cityChoices = new Choices(citySelect, {
-  searchEnabled: true,
-  itemSelectText: "",
-});
+
 
 
 // * получение данных
@@ -25,30 +20,38 @@ const getData = async (url, cbSuccess, cbError) => {
 }
 
 
-// получение данных по API
-getData(
-  API_URL + LOCATION_URL,
-  data => {
-    console.log('data reseived', data);
-    data.forEach((city, index) => {
-      console.log(index, city);
-    })
-  },
-  err => {
-    console.error('data failed', err);
-  }
-);
+// * init main func
+const init = () => {
+  // поключаем скрипт для работы с селектом
+  const citySelect = document.querySelector('#city');
+  const cityChoices = new Choices(citySelect, {
+    itemSelectText: "выберите город",
+  });
+  
+  // получение данных по API
+  getData(
+    `${API_URL}${LOCATION_URL}`,
+    (locationData) => {
+      console.log('data reseived', locationData);
+      // добавляется по алфавиту в список селект
+      cityChoices.setChoices(
+        [
+          {value: 'Калининград'},
+          {value: 'Кёнигсберг'},
+          {value: 'Королевецъ'},
+        ],
+        "value",
+        "label",
+        false,
+      );
+      
+    },
+    (err) => {
+      console.error('data failed', err);
+    }
+  );
+  
+}
 
 
-/*
-fetch(API_URL + LOCATION_URL)
-  .then((response) => {
-    return response.json();
-  })
-  .then((data) => {
-    console.log(data);
-  })
-  .catch((error) => {
-    console.log(error);
-});
-*/
+init();
