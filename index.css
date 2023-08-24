@@ -2,11 +2,12 @@
 @import url(/css/fonts.css);
 @import url(/css/global.css);
 
-/* @import url(/css/style.css); */
-
 @import url(/css/header.css);
+@import url(/css/footer.css);
+
 @import url(/css/hero.css);
 @import url(/css/vacancies.css);
+@import url(/css/vacancy.css);
 
-
-@import url(/css/footer.css);
+/* dim debug */
+/* @import url(/css/style.css); */

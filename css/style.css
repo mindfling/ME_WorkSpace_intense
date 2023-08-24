@@ -1,7 +1,7 @@
-/** my styles */
-/* .main {
-  border: 1px solid magenta;
-} */
+/** my debug styles */
+.main {
+  background-color: lightgray;
+}
 .container {
   border: 1px solid orange;
 }
@@ -9,4 +9,20 @@
 .vacancy {
   border: 1px solid lawngreen;
   background-color: #fff;
+}
+
+
+.hero {
+  background-color: #fff;
+}
+.hero__title {
+  border: 1px solid red;
+}
+
+.footer {
+  border: 1px solid magenta;
+}
+
+.footer__content {
+  border: 1px solid lawngreen;
 }
