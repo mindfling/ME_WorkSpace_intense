@@ -4,30 +4,45 @@
   justify-content: space-between;
   align-items: start;
   gap: 8px;
+  
+  border-radius: 16px;
+  background: #FFF;
+  padding: 16px;
+  height: 100%;
+  cursor: pointer;
+  transition: box-shadow 300ms ease;
 }
+.vacancy:hover {
+  box-shadow: 0 0 17px rgba(108, 108, 108, 0.508);
+}
+
 .vacancy__img {
   display: block;
   width: 44px;
   height: 44px;
   margin-bottom: 4px;
 }
+
 .vacancy__company {
   color: #171717;
   font-size: 20px;
 }
+
 .vacancy__title {
   color: #171717;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   border-radius: 4px;
-  background: #EAECFF;
+  background: #eaecff;
   padding: 3px 5px;
 }
+
 .vacancy__fields {
 }
+
 .vacancy__field {
-  color: #CCC;
+  color: #cccccc;
   font-size: 14px;
   font-weight: 400;
 }

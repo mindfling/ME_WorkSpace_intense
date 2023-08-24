@@ -16,9 +16,6 @@
   gap: 20px;
 }
 .cards__item {
-  width: 280px;
-  height: 219px;
-  padding: 16px;
-  border-radius: 16px;
-  background: #ffffff;
+  /* padding: 16px; */
+  /* border-radius: 16px; */
 }
