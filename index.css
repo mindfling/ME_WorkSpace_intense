@@ -1,3 +1,5 @@
+@import url(/css/choices.min.css);
+
 @import url(/css/normalize.css);
 @import url(/css/fonts.css);
 @import url(/css/global.css);
@@ -10,6 +12,7 @@
 @import url(/css/cards.css);
 @import url(/css/vacancy.css);
 @import url(/css/checkbox.css);
+@import url(/css/choices.css);
 
 @import url(/css/footer.css);
 

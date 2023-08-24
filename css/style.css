@@ -1,9 +1,13 @@
 /** my debug styles */
 .main {
-  background-color: lightgray;
+  /* background-color: lightgray; */
 }
 .container {
   border: 1px solid orange;
+}
+
+.filter {
+  border: 1px solid lawngreen;
 }
 
 .vacancy {
