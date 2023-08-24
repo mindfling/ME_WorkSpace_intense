@@ -1,16 +1,18 @@
 .cards {
-  
+  /* vacancies-cards */
 }
 .cards__title {
-  
+  /* visually-hidden */
 }
 
 .cards__list {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  /* display: flex; */
+  /* flex-direction: row; */
+  /* justify-content: space-evenly; */
+  /* align-items: center; */
+  /* flex-wrap: wrap; */
   gap: 20px;
 }
 .cards__item {
@@ -18,5 +20,5 @@
   height: 219px;
   padding: 16px;
   border-radius: 16px;
-  background: #FFF;
+  background: #ffffff;
 }
