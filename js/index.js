@@ -33,16 +33,20 @@ const init = () => {
     `${API_URL}${LOCATION_URL}`,
     (locationData) => {
       console.log('data reseived', locationData);
+      
+      // переберем массив
+      const locations = locationData.map((location) => ({
+        "value": location,
+      }));
+      
+      console.log(locations)
+      
       // добавляется по алфавиту в список селект
       cityChoices.setChoices(
-        [
-          {value: 'Калининград'},
-          {value: 'Кёнигсберг'},
-          {value: 'Королевецъ'},
-        ],
+        locations,
         "value",
         "label",
-        false,
+        false, // true заменяет старые значения
       );
       
     },
