@@ -11,16 +11,36 @@ const cityChoices = new Choices(citySelect, {
 
 
 // * получение данных
-const getData = (url, cbSuccess, cbError) => {
+const getData = async (url, cbSuccess, cbError) => {
   try {
-    cbSuccess(); // callback success case
+    console.log('url: ', url);
+    
+    const response = await fetch(url);
+    const data = await response.json();
+    cbSuccess(data); // callback success case
+    
   } catch (err) {
     cbError(err); // callback fail case
   }
 }
 
 
-// * получение данных по API
+// получение данных по API
+getData(
+  API_URL + LOCATION_URL,
+  data => {
+    console.log('data reseived', data);
+    data.forEach((city, index) => {
+      console.log(index, city);
+    })
+  },
+  err => {
+    console.error('data failed', err);
+  }
+);
+
+
+/*
 fetch(API_URL + LOCATION_URL)
   .then((response) => {
     return response.json();
@@ -31,5 +51,4 @@ fetch(API_URL + LOCATION_URL)
   .catch((error) => {
     console.log(error);
 });
-  
-  
+*/
