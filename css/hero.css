@@ -1,8 +1,9 @@
 .hero {
   display: flex;
   width: 100%;
-  padding-top: 60px;
-  padding-bottom: 50px;
+  /* padding-top: 60px; */
+  /* padding-bottom: 50px; */
+  padding: 60px 0 50px;
 }
 
 .hero__container {
@@ -13,20 +14,25 @@
   flex-direction: column;
   justify-content: start;
   align-items: start;
-
-  /* todo ::after */
-  background: url(../img/hero/macbg@1x.png) 100% 0  no-repeat;
-  background-size: contain;
+  position: relative;
+  z-index: 99;
+}
+.hero__container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -9px;
+  display: block;
+  width: 421px;
+  height: 330px;
+  background: url(../img/hero/laptop-makbook@1x.png) no-repeat center/contain;
+  z-index: -1;
 }
 
 .hero__title {
   max-width: 780px;
-  color: #171717;
-  font-family: Inter;
   font-size: 90px;
-  font-style: normal;
   font-weight: 400;
-  line-height: 1.2; /* 108px */
   letter-spacing: 1.8px;
   text-transform: uppercase;
 }
