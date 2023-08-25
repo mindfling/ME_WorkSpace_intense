@@ -28,7 +28,7 @@
   display: block;
   content: '';
   inset: 0;
-  background: url('../img/active.svg') no-repeat center;
+  background: url('../img/active.svg') no-repeat center/145%;
   transition: opacity 300ms ease;
   opacity: 0;
 }
@@ -39,12 +39,12 @@
 
 .checkbox__input:focus-visible {
   outline: none;
-  box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.326);
+  box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.433);
 }
 
 .checkbox__input:hover:not(:disabled) {
   outline: none;
-  box-shadow: 1px 1px 12px #a6adff8c;
+  box-shadow: 1px 1px 12px rgba(141, 147, 216, 0.672);
 }
 
 .checkbox__input:disabled {
