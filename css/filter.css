@@ -1,5 +1,10 @@
 .filter {
   position: relative;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: start; */
+  /* align-items: start; */
+  /* gap: 32px; */
 }
 
 .filter__reset {
@@ -58,8 +63,19 @@
   border: 0;
 }
 .filter__input::placeholder {
-  color: #ccc;
+  color: #cccccc;
 }
+
+.filter__input:focus-visible {
+  outline: none;
+  box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.433);
+}
+
+.filter__input:hover {
+  outline: none;
+  box-shadow: 1px 1px 12px rgba(141, 147, 216, 0.672);
+}
+
 
 .filter__checkboxes {
   display: flex;

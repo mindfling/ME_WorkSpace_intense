@@ -7,6 +7,15 @@
   width: 100%;
 }
 
+.choices:focus-visible {
+  outline: none;
+  box-shadow: 1px 1px 12px #0000006e;
+}
+.choices:hover {
+  outline: none;
+  box-shadow: 1px 1px 12px #8d93d8ab;
+}
+
 .choices__inner {
   background-color: #fff;
   padding: 6px 16px;
